@@ -1,3 +1,5 @@
+package com.koskom.cameltask;
+
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
 

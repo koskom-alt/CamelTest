@@ -1,3 +1,5 @@
+package com.koskom.cameltask;
+
 import javax.jms.*;
 
 import org.apache.activemq.ActiveMQConnection;
