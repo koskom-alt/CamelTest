@@ -2,7 +2,7 @@ import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
 
 public class JmsReadRoute extends RouteBuilder {
-    public void configure() throws Exception {
+    public void configure() {
         from("activemq:queue:testQueue")
                 .choice()
                     .when(body().isNull())
