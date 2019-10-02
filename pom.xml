@@ -9,12 +9,6 @@
     <version>1.0</version>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-undertow -->
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-undertow</artifactId>
-            <version>2.24.2</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
@@ -42,30 +36,14 @@
             <version>2.19.2</version>
         </dependency>
         <!-- Apache Active MQ Jars -->
-        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-broker -->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-broker</artifactId>
-            <version>5.15.10</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-client -->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-client</artifactId>
-            <version>5.15.10</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-base64 -->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-base64</artifactId>
             <version>3.0.0-RC1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-pool -->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-pool</artifactId>
-            <version>5.15.10</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-all -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
@@ -86,39 +64,6 @@
             <version>1.7.12</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-test</artifactId>
-            <version>2.19.2</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.koskom.cameltask.MessageDecoder</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-            </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

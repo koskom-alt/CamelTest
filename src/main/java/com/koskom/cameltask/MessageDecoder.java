@@ -28,8 +28,6 @@ public class MessageDecoder {
         }
         catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            ctx.stop();
         }
     }
 
