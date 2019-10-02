@@ -9,6 +9,13 @@
     <version>1.0</version>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-undertow -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-undertow</artifactId>
+            <version>2.24.2</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
