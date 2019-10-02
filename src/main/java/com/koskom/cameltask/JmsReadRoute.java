@@ -13,6 +13,6 @@ public class JmsReadRoute extends RouteBuilder {
                         .log(LoggingLevel.INFO,"Is Empty Message")
                     .otherwise()
                         .unmarshal().base64()
-                        .to("activemq:queue:readQueue");
+                        .to("activemq:queue:testQueue2");
     }
 }

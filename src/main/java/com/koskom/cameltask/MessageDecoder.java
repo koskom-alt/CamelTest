@@ -7,7 +7,6 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
-import org.apache.camel.spi.ShutdownStrategy;
 
 public class MessageDecoder {
     private String url;
@@ -15,6 +14,7 @@ public class MessageDecoder {
     MessageDecoder(String url){
         this.url = url;
     }
+
     public void run() throws Exception {
         JmsReadRoute routeBuilder = new JmsReadRoute();
         CamelContext ctx = new DefaultCamelContext();
